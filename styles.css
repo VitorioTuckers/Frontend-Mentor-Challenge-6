@@ -1,0 +1,140 @@
+:root {
+  --primary-clr-1: hsl(31, 77%, 52%);
+  --primary-clr-2: hsl(184, 100%, 22%);
+  --primary-clr-3: hsl(179, 100%, 13%);
+  --neutral-clr-1: hsla(0, 0%, 100%, 0.75);
+  --neutral-clr-2: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--neutral-clr-1);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-clr-2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  min-width: 950px;
+  margin: 0 auto;
+}
+
+.divider {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.icon {
+  align-self: flex-start;
+}
+
+.first {
+  background-color: var(--primary-clr-1);
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.second {
+  background-color: var(--primary-clr-2);
+}
+
+.third {
+  background-color: var(--primary-clr-3);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.heading {
+  color: var(--neutral-clr-2);
+  font-size: 3rem;
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+}
+
+.description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.btn {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  align-self: flex-start;
+  background-color: var(--neutral-clr-2);
+  padding: 0.8rem 1.8rem;
+  border: solid 2.5px var(--neutral-clr-2);
+  border-radius: 2rem;
+  margin-top: 4rem;
+}
+
+.btn:hover { 
+  background-color: transparent;
+  color: var(--neutral-clr-2);
+  cursor: pointer;
+}
+
+.uno {
+  color: var(--primary-clr-1);
+}
+
+.dos {
+  color: var(--primary-clr-2);
+}
+
+.tres {
+  color: var(--primary-clr-3);
+}
+
+@media screen and (max-width: 950px) {
+
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    min-width: 350px;
+  }
+
+  .divider {
+    min-width: 350px;
+    max-width: 350px;
+    padding: 4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+  }
+
+  .first {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .third {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+}
